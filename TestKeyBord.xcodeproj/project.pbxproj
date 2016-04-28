@@ -15,6 +15,11 @@
 		1F04BCDE1CCF186000FE5A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F04BCDC1CCF186000FE5A70 /* LaunchScreen.storyboard */; };
 		1F04BCE91CCF186000FE5A70 /* TestKeyBordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F04BCE81CCF186000FE5A70 /* TestKeyBordTests.m */; };
 		1F04BCF41CCF186000FE5A70 /* TestKeyBordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F04BCF31CCF186000FE5A70 /* TestKeyBordUITests.m */; };
+		1F08E10E1CCF34E60047C985 /* KeybordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08E10D1CCF34E60047C985 /* KeybordTextField.m */; };
+		1F08E1111CCF351B0047C985 /* KeybordNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08E1101CCF351B0047C985 /* KeybordNumbers.m */; };
+		1F53F41E1CCF2A1400F552AF /* SecretKeybord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F53F41D1CCF2A1400F552AF /* SecretKeybord.m */; };
+		1FB546B41CD08FD8008C8AFF /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB546B31CD08FD8008C8AFF /* Reveal.framework */; };
+		1FB546BC1CD091D8008C8AFF /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB546BB1CD091D8008C8AFF /* libz.1.2.5.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		1F04BCEF1CCF186000FE5A70 /* TestKeyBordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestKeyBordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F04BCF31CCF186000FE5A70 /* TestKeyBordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKeyBordUITests.m; sourceTree = "<group>"; };
 		1F04BCF51CCF186000FE5A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F08E10C1CCF34E60047C985 /* KeybordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeybordTextField.h; sourceTree = "<group>"; };
+		1F08E10D1CCF34E60047C985 /* KeybordTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeybordTextField.m; sourceTree = "<group>"; };
+		1F08E10F1CCF351B0047C985 /* KeybordNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeybordNumbers.h; sourceTree = "<group>"; };
+		1F08E1101CCF351B0047C985 /* KeybordNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeybordNumbers.m; sourceTree = "<group>"; };
+		1F53F41C1CCF2A1400F552AF /* SecretKeybord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecretKeybord.h; sourceTree = "<group>"; };
+		1F53F41D1CCF2A1400F552AF /* SecretKeybord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretKeybord.m; sourceTree = "<group>"; };
+		1FB546B31CD08FD8008C8AFF /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		1FB546BB1CD091D8008C8AFF /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB546BC1CD091D8008C8AFF /* libz.1.2.5.tbd in Frameworks */,
+				1FB546B41CD08FD8008C8AFF /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 		1F04BCC21CCF186000FE5A70 = {
 			isa = PBXGroup;
 			children = (
+				1FB546BB1CD091D8008C8AFF /* libz.1.2.5.tbd */,
 				1F04BCCD1CCF186000FE5A70 /* TestKeyBord */,
 				1F04BCE71CCF186000FE5A70 /* TestKeyBordTests */,
 				1F04BCF21CCF186000FE5A70 /* TestKeyBordUITests */,
@@ -101,6 +117,8 @@
 		1F04BCCD1CCF186000FE5A70 /* TestKeyBord */ = {
 			isa = PBXGroup;
 			children = (
+				1FB546B31CD08FD8008C8AFF /* Reveal.framework */,
+				1F53F41B1CCF29F900F552AF /* PeopleSecretKeybord */,
 				1F04BCD11CCF186000FE5A70 /* AppDelegate.h */,
 				1F04BCD21CCF186000FE5A70 /* AppDelegate.m */,
 				1F04BCD41CCF186000FE5A70 /* ViewController.h */,
@@ -138,6 +156,19 @@
 				1F04BCF51CCF186000FE5A70 /* Info.plist */,
 			);
 			path = TestKeyBordUITests;
+			sourceTree = "<group>";
+		};
+		1F53F41B1CCF29F900F552AF /* PeopleSecretKeybord */ = {
+			isa = PBXGroup;
+			children = (
+				1F53F41C1CCF2A1400F552AF /* SecretKeybord.h */,
+				1F53F41D1CCF2A1400F552AF /* SecretKeybord.m */,
+				1F08E10C1CCF34E60047C985 /* KeybordTextField.h */,
+				1F08E10D1CCF34E60047C985 /* KeybordTextField.m */,
+				1F08E10F1CCF351B0047C985 /* KeybordNumbers.h */,
+				1F08E1101CCF351B0047C985 /* KeybordNumbers.m */,
+			);
+			path = PeopleSecretKeybord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F08E10E1CCF34E60047C985 /* KeybordTextField.m in Sources */,
+				1F53F41E1CCF2A1400F552AF /* SecretKeybord.m in Sources */,
 				1F04BCD61CCF186000FE5A70 /* ViewController.m in Sources */,
 				1F04BCD31CCF186000FE5A70 /* AppDelegate.m in Sources */,
 				1F04BCD01CCF186000FE5A70 /* main.m in Sources */,
+				1F08E1111CCF351B0047C985 /* KeybordNumbers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +449,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestKeyBord",
+				);
 				INFOPLIST_FILE = TestKeyBord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.people.TestKeyBord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,8 +466,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestKeyBord",
+				);
 				INFOPLIST_FILE = TestKeyBord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.people.TestKeyBord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,6 +544,7 @@
 				1F04BCFA1CCF186000FE5A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F04BCFB1CCF186000FE5A70 /* Build configuration list for PBXNativeTarget "TestKeyBordTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +553,7 @@
 				1F04BCFD1CCF186000FE5A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F04BCFE1CCF186000FE5A70 /* Build configuration list for PBXNativeTarget "TestKeyBordUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +562,7 @@
 				1F04BD001CCF186000FE5A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
